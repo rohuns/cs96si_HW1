@@ -21,7 +21,7 @@ Here's a walkthrough of implemented user stories:
 <img src='http://www.giphy.com/gifs/l0HlynfJN7mlx412M' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 if above link does not work try the one below
-<a href = 'http://www.giphy.com/gifs/l0HlynfJN7mlx412M'> GIF Link </a>
+<a href = 'http://www.giphy.com/gifs/l0HlynfJN7mlx412M' target="_blank"> GIF Link </a>
 
 GIF created with [GIPHY Capture](https://itunes.apple.com/us/app/gifgrabber/id668208984?mt=12).
 
