@@ -17,7 +17,8 @@ The following functionalities are completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='http://www.giphy.com/gifs/l0HlynfJN7mlx412M' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [GIPHY Capture](https://itunes.apple.com/us/app/gifgrabber/id668208984?mt=12).
 
