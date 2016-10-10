@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16546C7B1DAB077E00B4F8BE /* TopicInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16546C7A1DAB077E00B4F8BE /* TopicInfoViewController.swift */; };
 		167936BC1DA5B44B00F2BB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167936BB1DA5B44B00F2BB5E /* AppDelegate.swift */; };
-		167936BE1DA5B44B00F2BB5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167936BD1DA5B44B00F2BB5E /* ViewController.swift */; };
 		167936C11DA5B44B00F2BB5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167936BF1DA5B44B00F2BB5E /* Main.storyboard */; };
 		167936C31DA5B44B00F2BB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167936C21DA5B44B00F2BB5E /* Assets.xcassets */; };
 		167936C61DA5B44B00F2BB5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167936C41DA5B44B00F2BB5E /* LaunchScreen.storyboard */; };
+		168A59391DA971D8006FCC0F /* HealthFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A59381DA971D8006FCC0F /* HealthFinderViewController.swift */; };
+		16A8F2131DAA1D32003498E7 /* HealthFinderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F2121DAA1D32003498E7 /* HealthFinderTableViewCell.swift */; };
+		EED74F541C0717CC53480947 /* Pods_HealthFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF2D98FF3A8BDF3E7F81F8F /* Pods_HealthFinder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16546C7A1DAB077E00B4F8BE /* TopicInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicInfoViewController.swift; sourceTree = "<group>"; };
 		167936B81DA5B44B00F2BB5E /* HealthFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167936BB1DA5B44B00F2BB5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		167936BD1DA5B44B00F2BB5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		167936C01DA5B44B00F2BB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		167936C21DA5B44B00F2BB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		167936C51DA5B44B00F2BB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		167936C71DA5B44B00F2BB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		168A59381DA971D8006FCC0F /* HealthFinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthFinderViewController.swift; sourceTree = "<group>"; };
+		16A8F2121DAA1D32003498E7 /* HealthFinderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthFinderTableViewCell.swift; sourceTree = "<group>"; };
+		7BF2D98FF3A8BDF3E7F81F8F /* Pods_HealthFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6C4879E973E91F5B758C98 /* Pods-HealthFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthFinder/Pods-HealthFinder.release.xcconfig"; sourceTree = "<group>"; };
+		EF9BDADB622EA53033AAAA98 /* Pods-HealthFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthFinder/Pods-HealthFinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED74F541C0717CC53480947 /* Pods_HealthFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				167936BA1DA5B44B00F2BB5E /* HealthFinder */,
 				167936B91DA5B44B00F2BB5E /* Products */,
+				22826A25B77A14841BD668D3 /* Pods */,
+				88F2D3CE7B06E4BAEAF9A369 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,41 @@
 		167936BA1DA5B44B00F2BB5E /* HealthFinder */ = {
 			isa = PBXGroup;
 			children = (
-				167936BB1DA5B44B00F2BB5E /* AppDelegate.swift */,
-				167936BD1DA5B44B00F2BB5E /* ViewController.swift */,
+				167936CD1DA5B48F00F2BB5E /* Supporting Files */,
 				167936BF1DA5B44B00F2BB5E /* Main.storyboard */,
+				168A59381DA971D8006FCC0F /* HealthFinderViewController.swift */,
+				16A8F2121DAA1D32003498E7 /* HealthFinderTableViewCell.swift */,
+				16546C7A1DAB077E00B4F8BE /* TopicInfoViewController.swift */,
+			);
+			path = HealthFinder;
+			sourceTree = "<group>";
+		};
+		167936CD1DA5B48F00F2BB5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				167936BB1DA5B44B00F2BB5E /* AppDelegate.swift */,
 				167936C21DA5B44B00F2BB5E /* Assets.xcassets */,
 				167936C41DA5B44B00F2BB5E /* LaunchScreen.storyboard */,
 				167936C71DA5B44B00F2BB5E /* Info.plist */,
 			);
-			path = HealthFinder;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22826A25B77A14841BD668D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF9BDADB622EA53033AAAA98 /* Pods-HealthFinder.debug.xcconfig */,
+				EA6C4879E973E91F5B758C98 /* Pods-HealthFinder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88F2D3CE7B06E4BAEAF9A369 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BF2D98FF3A8BDF3E7F81F8F /* Pods_HealthFinder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 167936CA1DA5B44B00F2BB5E /* Build configuration list for PBXNativeTarget "HealthFinder" */;
 			buildPhases = (
+				B9D0A329E7D866255F84FB0C /* [CP] Check Pods Manifest.lock */,
 				167936B41DA5B44B00F2BB5E /* Sources */,
 				167936B51DA5B44B00F2BB5E /* Frameworks */,
 				167936B61DA5B44B00F2BB5E /* Resources */,
+				16551860289CAF8797AAB2F6 /* [CP] Embed Pods Frameworks */,
+				DE08922089093A6D06ACE30C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +172,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16551860289CAF8797AAB2F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthFinder/Pods-HealthFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9D0A329E7D866255F84FB0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE08922089093A6D06ACE30C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthFinder/Pods-HealthFinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		167936B41DA5B44B00F2BB5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				167936BE1DA5B44B00F2BB5E /* ViewController.swift in Sources */,
+				16A8F2131DAA1D32003498E7 /* HealthFinderTableViewCell.swift in Sources */,
+				168A59391DA971D8006FCC0F /* HealthFinderViewController.swift in Sources */,
+				16546C7B1DAB077E00B4F8BE /* TopicInfoViewController.swift in Sources */,
 				167936BC1DA5B44B00F2BB5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +347,7 @@
 		};
 		167936CB1DA5B44B00F2BB5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9BDADB622EA53033AAAA98 /* Pods-HealthFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HealthFinder/Info.plist;
@@ -268,6 +360,7 @@
 		};
 		167936CC1DA5B44B00F2BB5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA6C4879E973E91F5B758C98 /* Pods-HealthFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HealthFinder/Info.plist;
@@ -297,6 +390,7 @@
 				167936CC1DA5B44B00F2BB5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
