@@ -22,13 +22,17 @@ class TopicInfoViewController: UIViewController {
         let sections = currentTopic["Sections"] as! NSArray
         let firstCategory = sections[0] as! NSDictionary
         
+        //title string
         let title = firstCategory["Title"] as! String
         titleTopic.text = (title)
         
+        // topic description
         let description = firstCategory["Description"] as! String
-        
+    
+        //topic content
         let content = firstCategory["Content"] as! String
         
+        //appending description and content
         let combined = description + "\r\n" + "\r\n" + content
         contentTopicLabel.text = combined
         
@@ -47,15 +51,4 @@ class TopicInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

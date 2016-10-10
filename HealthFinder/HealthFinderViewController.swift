@@ -16,6 +16,7 @@ class HealthFinderViewController: UIViewController, UITableViewDataSource, UITab
 
     @IBOutlet var tableView: UITableView!
     
+    //data from API request
     var topics: [NSDictionary]?
     
     override func viewDidLoad() {
@@ -24,7 +25,7 @@ class HealthFinderViewController: UIViewController, UITableViewDataSource, UITab
         tableView.delegate = self
         
         
-        MBProgressHUD.showAdded(to: self.view, animated: true)
+        MBProgressHUD.showAdded(to: self.view, animated: true) //loading
         let url = URL(string:"https://healthfinder.gov/developer/MyHFSearch.json?api_key=demo_api_key&who=child&age=16&gender=male")
         let request = URLRequest(url: url!)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
@@ -35,7 +36,7 @@ class HealthFinderViewController: UIViewController, UITableViewDataSource, UITab
                     if let results = responseDictionary["Result"]as?NSDictionary{
                         self.topics = results["Topics"] as? [NSDictionary]
                         self.tableView.reloadData()
-                        MBProgressHUD.hide(for: self.view, animated: true)
+                        MBProgressHUD.hide(for: self.view, animated: true)// stop loading symbol
                     }
                 }
             }
@@ -46,7 +47,6 @@ class HealthFinderViewController: UIViewController, UITableViewDataSource, UITab
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -57,6 +57,8 @@ class HealthFinderViewController: UIViewController, UITableViewDataSource, UITab
         return 0
     }
     
+    
+    //setting cells in the tableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HealthFinderTableViewCell
         cell.titleLabel.text = topics![indexPath.row]["Title"] as? String
@@ -65,6 +67,8 @@ class HealthFinderViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
     
+    
+    //used to pass information on when cell is clicked
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let indexPath = tableView.indexPathForSelectedRow
         let currentTopic = topics![indexPath!.row] as! NSDictionary
